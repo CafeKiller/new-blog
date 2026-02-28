@@ -1,12 +1,12 @@
 ---
-title: 'Draft Page'
+title: '草稿页面'
 publishDate: '2025-07-03'
 updatedDate: '2025-07-10'
-description: 'Draft page for any purpose'
+description: '用于任何目的的草稿页面'
 tags:
-  - Draft
-language: 'English'
-# Remove or set false to turn draft page into normal ones
+  - 草稿
+language: '中文'
+# 移除或设置为 false 可将草稿页面变为正常页面
 draft: true
 ---
 
@@ -15,12 +15,12 @@ test
 test
 ```
 
-> Test
+> 测试
 
-Test `inline code`
+测试 `行内代码`
 
-| Header 1 | Header 2 | Header 3 |
+| 表头 1 | 表头 2 | 表头 3 |
 | -------- | -------- | -------- |
-| Row 1    | Data 1   | Data 2   |
-| Row 2    | Data 1   | Data 2   |
-| Row 3    | Data 1   | Data 2   |
+| 行 1    | 数据 1   | 数据 2   |
+| 行 2    | 数据 1   | 数据 2   |
+| 行 3    | 数据 1   | 数据 2   |

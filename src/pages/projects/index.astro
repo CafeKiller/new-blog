@@ -11,15 +11,15 @@ import KeyIcon from '@/assets/icons/key.svg'
 import wechat from '@/assets/wechat-qrcode.jpg'
 
 const headings = [
-  { depth: 2, slug: 'programs', text: 'Programs' },
-  { depth: 2, slug: 'learnings', text: 'Learnings' },
-  { depth: 2, slug: 'others', text: 'Others' },
-  { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
-  { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
+  { depth: 2, slug: 'programs', text: '程序项目' },
+  { depth: 2, slug: 'learnings', text: '学习笔记' },
+  { depth: 2, slug: 'others', text: '其他' },
+  { depth: 2, slug: 'gpg-signature', text: 'GPG 签名' },
+  { depth: 2, slug: 'sponsorship', text: '赞助支持' }
 ]
 ---
 
-<PageLayout title='Projects' {headings} view>
+<PageLayout title='项目' {headings} view>
   {/* About astro-pure */}
   <div class='not-prose flex justify-center'>
     <a
@@ -27,10 +27,10 @@ const headings = [
       class='flex items-center gap-x-3 rounded-full border bg-background px-4 py-2 text-sm shadow-sm transition-shadow hover:shadow-md'
     >
       <span class='size-2 rounded-full bg-green-400'></span>
-      <p class='font-medium text-muted-foreground'>About Astro-Theme-Pure Project</p>
+      <p class='font-medium text-muted-foreground'>关于 Astro-Theme-Pure 项目</p>
     </a>
   </div>
-  <p>Github Activities:</p>
+  <p>Github 活动：</p>
   <p>
     <Image
       src='https://ghchart.rshah.org/659eb9/cworld1'
@@ -40,19 +40,18 @@ const headings = [
     />
   </p>
   <p>
-    If you think it would be useful or interesting to collaborate on a project, you can donate to
-    support my work or contact me to discuss a project.
+    如果你觉得这些项目有用或有趣，可以通过赞助支持我的工作，或者联系我讨论合作项目。
   </p>
-  <Button title='Checkout sponsorship' class='w-fit' href='#sponsorship'>
+  <Button title='查看赞助方式' class='w-fit' href='#sponsorship'>
     <Icon class='size-5' name='receive-money' slot='before' />
   </Button>
 
-  <h2 id='programs'>Programs</h2>
+  <h2 id='programs'>程序项目</h2>
   <ProjectSection
     projects={[
       {
         name: '🎨 Astro Theme Pure',
-        description: 'A simple, fast and powerful blog & document theme built by Astro',
+        description: '一个简洁、快速且强大的博客和文档主题，基于 Astro 构建',
         links: [
           { type: 'github', href: 'https://github.com/cworld1/astro-theme-pure' },
           { type: 'site', href: 'https://astro-pure.js.org/' },
@@ -62,7 +61,7 @@ const headings = [
       },
       {
         name: '💄 PKU Art',
-        description: 'A script to beautify pku course website',
+        description: '一个美化北大课程网站的脚本',
         links: [
           { type: 'github', href: 'https://github.com/zhuozhiyongde/pku-art' },
           { type: 'site', href: 'https://github.com/zhuozhiyongde/pku-art' },
@@ -71,12 +70,12 @@ const headings = [
       }
     ]}
   />
-  <Collapse title='Some old projects'>
+  <Collapse title='一些旧项目'>
     <ProjectSection
       projects={[
         {
           name: '🧩 rehype-autolink-headings-simple',
-          description: 'A simple version of rehype-autolink-headings',
+          description: 'rehype-autolink-headings 的简化版本',
           links: [
             { type: 'github', href: 'https://github.com/cworld1/rehype-autolink-headings-simple' },
             {
@@ -87,21 +86,20 @@ const headings = [
         },
         {
           name: 'Gaussian NB',
-          description:
-            'Simulating the Parsimonious Bayesian Algorithm with Python and Finding the Probability Prediction of Breast Cancer ',
+          description: '使用 Python 模拟朴素贝叶斯算法，预测乳腺癌概率',
           links: [{ type: 'github', href: 'https://github.com/cworld1/gaussian-nb' }]
         }
       ]}
     />
   </Collapse>
 
-  <h2 id='learnings'>Learnings</h2>
+  <h2 id='learnings'>学习笔记</h2>
   <ProjectSection
     class='my-2'
     projects={[
       {
         name: 'R Learning',
-        description: 'Some notes and code about learning R language',
+        description: 'R 语言学习笔记和代码',
         links: [
           { type: 'github', href: 'https://github.com/cworld1/r-learning' },
           { type: 'site', href: 'https://cworld1.github.io/r-learning' }
@@ -109,7 +107,7 @@ const headings = [
       },
       {
         name: 'CS 213 Learning',
-        description: 'Notes, code and experiences for Introduction to Computer Systems course',
+        description: '计算机系统导论课程笔记、代码和经验',
         links: [
           {
             type: 'github',
@@ -120,47 +118,46 @@ const headings = [
     ]}
   />
 
-  <h2 id='others'>Others</h2>
+  <h2 id='others'>其他</h2>
   <ProjectSection
     projects={[
       {
         name: 'CWorld',
-        description: "CWorld's Github",
+        description: 'CWorld 的 Github 主页',
         links: [{ type: 'github', href: 'https://github.com/cworld1' }]
       },
       {
         name: 'Arthals',
-        description: 'Arthals Github',
+        description: 'Arthals 的 Github 主页',
         links: [{ type: 'github', href: 'https://github.com/zhuozhiyongde' }]
       }
     ]}
   />
 
-  <h2 id='gpg-signature'>GPG Signature</h2>
+  <h2 id='gpg-signature'>GPG 签名</h2>
   <p>
-    You can verify the authenticity of the files I signed by checking the GPG signature. My GPG key
-    is <code>114514</code>, and you can find it on the opengpg key servers or download from it.
+    你可以通过检查 GPG 签名来验证我签署的文件的真实性。我的 GPG 密钥是 <code>114514</code>，你可以在 OpenPGP 密钥服务器上找到它或从那里下载。
   </p>
-  <Button href='https://keys.openpgp.org/search?q=114514' title='Checkout my key' target='_blank'>
+  <Button href='https://keys.openpgp.org/search?q=114514' title='查看我的密钥' target='_blank'>
     <KeyIcon class='size-5' slot='before' />
   </Button>
 
-  <h2 id='sponsorship'>Sponsorship</h2>
-  <p>Chinese methods: <a href="https://afdian.com/a/cworld" target="_blank">Afadian</a>, Wechat or Alipay </p>
+  <h2 id='sponsorship'>赞助支持</h2>
+  <p>国内方式：<a href="https://afdian.com/a/cworld" target="_blank">爱发电</a>、微信或支付宝</p>
   <Sponsorship
     methods={[
       { name: 'WeChat', icon: 'wechat-pay', image: wechat },
       { name: 'Alipay', icon: 'alipay', image: alipay }
     ]}
   />
-  <p>Global methods: <a href="https://ko-fi.com/cworld0" target="_blank">Ko-fi</a> </p>
-  <p>Please leave a message or contact me proactively after sponsorship. My email is:
+  <p>海外方式：<a href="https://ko-fi.com/cworld0" target="_blank">Ko-fi</a></p>
+  <p>赞助后请留言或主动联系我。我的邮箱是：
     <code style='cursor: pointer'
       onclick='const m=atob(this.textContent);alert(m);window.open(`mailto:${m}`,"_blank")'
     >Y3dvcmxkMEBxcS5jb20=</code>
-    (click code to transform base64).
+    (点击代码转换 base64)。
   </p>
-  <p>Thanks to the following sponsors:</p>
+  <p>感谢以下赞助者：</p>
   <Sponsors
     progressMax={50}
     sponsors={[

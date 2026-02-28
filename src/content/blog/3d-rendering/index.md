@@ -1,49 +1,49 @@
 ---
-title: 'What Is 3D Rendering? Complete Guide to 3D Visualization'
+title: '什么是 3D 渲染？3D 可视化完全指南'
 publishDate: 2025-02-09
 updatedDate: 2025-02-24
-description: '3D imagery has the power to bring cinematic visions to life and help accurately plan tomorrow’s cityscapes. Here, 3D expert Ricardo Ortiz explains how it works.'
+description: '3D 图像能够将电影愿景变为现实，并帮助准确规划未来的城市景观。在这里，3D 专家 Ricardo Ortiz 解释了它的工作原理。'
 tags:
-  - Example
+  - 示例
   - 3D
-language: 'English'
+language: '中文'
 heroImage: { src: './thumbnail.jpg', color: '#D58388' }
 ---
 
-3D rendering is all around us. From huge action movies to car commercials to previews of upcoming buildings or product designs, 3D visualization has become so widespread and realistic that you probably don’t even know it’s there.
+3D 渲染无处不在。从大型动作电影到汽车广告，再到即将建成的建筑或产品设计预览，3D 可视化已经变得如此普遍和逼真，以至于你可能都没有意识到它的存在。
 
-In this introductory piece, Chaos’ Ricardo Ortiz explains the basics of 3D rendering, from the computational methods that create imagery to the artistic techniques that create great computer-generated (CG) content and its various uses.
+在这篇入门文章中，Chaos 的 Ricardo Ortiz 解释了 3D 渲染的基础知识，从创建图像的计算方法到创建优秀计算机生成（CG）内容的艺术技术及其各种用途。
 
-## What is 3D Rendering?
+## 什么是 3D 渲染？
 
-Put simply, 3D rendering is the process of using a computer to generate a 2D image from a digital three-dimensional scene.
+简单来说，3D 渲染是使用计算机从数字三维场景生成 2D 图像的过程。
 
-To generate an image, specific methodologies and special software and hardware are used. Therefore, we need to understand that 3D rendering is a process—the one that builds the image.
+为了生成图像，需要使用特定的方法和专门的软件和硬件。因此，我们需要理解 3D 渲染是一个过程——一个构建图像的过程。
 
 ![alt text](./nikola-arsov-still-life-interior-design-vray-3ds-max-05-930px.jpg)
 
-## Types of 3D rendering
+## 3D 渲染的类型
 
-We can create different types of rendered image; they can be realistic or non-realistic.
+我们可以创建不同类型的渲染图像；它们可以是写实的或非写实的。
 
-A realistic image could be an architectural interior that looks like a photograph, a product-design image such as a piece of furniture, or an automotive rendering of a car. On the other hand, we can create a non-realistic image such as an outline-type diagram or a cartoon-style image with a traditional 2D look. Technically, we can visualize anything we can imagine.
+写实图像可以是看起来像照片的建筑室内效果图、家具等产品设计图像，或汽车渲染图。另一方面，我们可以创建非写实图像，如轮廓图或具有传统 2D 外观的卡通风格图像。从技术上讲，我们可以将任何想象的东西可视化。
 
-## How is 3D rendering used?
+## 3D 渲染的应用
 
-3D rendering is an essential technique for many industries including architecture, product design, advertising, video games and visual effects for film, TV and animation.
+3D 渲染是许多行业的基本技术，包括建筑、产品设计、广告、视频游戏以及电影、电视和动画的视觉效果。
 
-In design and architecture, renders allow creative people to communicate their ideas in a clear and transparent way. A render gives them the chance to evaluate their proposals, experiment with materials, conduct studies and contextualize their designs in the real world before they are built or manufactured.
+在设计和建筑领域，渲染使创意人员能够以清晰透明的方式传达他们的想法。渲染让他们有机会评估方案、尝试材料、进行研究，并在建造或制造之前将设计置于现实世界中。
 
-For the media and entertainment industries, 3D rendering is fundamental to the creation of sequences and animations that tell stories, whether we’re watching an animated movie, a period drama, or an action sequence with explosions, ships from the future, exotic locales, or extraterrestrial creatures.
+对于媒体和娱乐行业，3D 渲染是创建讲述故事的序列和动画的基础，无论我们观看的是动画电影、年代剧，还是包含爆炸、未来飞船、异国风情或外星生物的动作场景。
 
 ![alt text](./thanos-dd-single-image-004a.jpg)
 
-Over the past few years, the evolution of computer graphics in these industries has replaced traditional techniques. For example, special effects are being replaced by visual effects, which means stunt people no longer risk their lives in car crashes.
+在过去几年中，这些行业中计算机图形的发展已经取代了传统技术。例如，特效正在被视觉效果所取代，这意味着特技演员不再需要在车祸中冒生命危险。
 
-In advertising, I would dare to say that 90% of automotive commercials are CG—or even more. In the architecture industry, many traditional techniques to create representations, such as scale models, have been replaced with photorealistic imagery to ensure we can see exactly how something will look once it’s built.
+在广告领域，我敢说 90% 的汽车广告都是 CG 制作的——甚至更多。在建筑行业，许多传统的表现技术，如比例模型，已被逼真的图像所取代，以确保我们能够准确看到建成后的样子。
 
-Accelerating processes, reducing costs and the demand for better quality results have helped technology evolve. Hardware is more powerful than ever and the switch to CG was inevitable.
+加速流程、降低成本和对更高质量结果的需求推动了技术的发展。硬件比以往任何时候都更强大，向 CG 的转变是不可避免的。
 
-## How is a 3D rendered image generated?
+## 3D 渲染图像是如何生成的？
 
-Two pieces of software, with different characteristics, are used to computer-generate images and animations: render engines and game engines. Render engines use a technique called ray tracing, while game engines use a technique called rasterization—and some engines mix both techniques, but we will talk about that later on.
+两种具有不同特性的软件用于计算机生成图像和动画：渲染引擎和游戏引擎。渲染引擎使用一种称为光线追踪的技术，而游戏引擎使用一种称为光栅化的技术——有些引擎混合使用这两种技术，但我们稍后会讨论这个问题。
